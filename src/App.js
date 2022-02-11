@@ -1,25 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import MainContainer from './MainContainer.jsx';
+import jsonData from './data.json';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const colorList = [
+		'hsl(15, 100%, 70%)',
+		'hsl(195, 74%, 62%)',
+		'hsl(348, 100%, 68%)',
+		'hsl(145, 58%, 55%)',
+		'hsl(264, 64%, 52%)',
+		'hsl(43, 84%, 65%)',
+	];
+	return <MainContainer jsonData={jsonData} colorList={colorList} />;
 }
 
 export default App;

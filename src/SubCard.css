@@ -1,0 +1,66 @@
+.track-card {
+	display: flex;
+	position: relative;
+	overflow: hidden;
+	flex-direction: column;
+	height: 239px;
+	width: 255px;
+	border-radius: 16px 16px 16px 16px;
+	justify-content: flex-end;
+	z-index: 1;
+}
+
+.track-subcard {
+	margin: 0;
+	background-color: hsl(235, 45%, 20%);
+	height: 200px;
+	width: 100%;
+	border-radius: 16px;
+	z-index: 2;
+}
+
+.top-container {
+	position: relative;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.top-container p {
+	margin-left: 32px;
+	margin-top: 32px;
+	margin-right: 0;
+	margin-bottom: 0;
+	font-size: 18px;
+	font-weight: 500;
+	color: white;
+}
+
+.top-container img {
+	position: absolute;
+	top: 8px;
+	right: 32px;
+}
+
+.time-spent {
+	margin-top: 32px;
+	margin-left: 32px;
+	margin-bottom: 0px;
+	font-weight: 400;
+	font-size: 45px;
+	color: white;
+}
+.last-time {
+	margin-left: 32px;
+	font-size: 12px;
+}
+
+.icon {
+	position: absolute;
+	top: -10px;
+	right: 10px;
+}
+
+#exercise-icon {
+	top: 0px;
+	transform: rotate(-30deg);
+}
