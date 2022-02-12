@@ -9,6 +9,10 @@
 .times {
 	margin-top: 32px;
 	margin-left: 32px;
+	cursor: pointer;
+}
+.times p:hover {
+	color: white;
 }
 
 .selected {
@@ -34,6 +38,7 @@
 	margin-top: 30px;
 	font-size: 15px;
 }
+
 .sub-card img {
 	margin-left: 32px;
 	margin-top: 32px;

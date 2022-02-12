@@ -5,6 +5,7 @@ function MainCard(props) {
 	const [selected, setSelected] = useState('weekly');
 	useEffect(() => {
 		document.getElementById(selected).classList.add('selected');
+		props.getTimeSpan(selected);
 		return () => {
 			document.getElementById(selected).classList.remove('selected');
 		};
